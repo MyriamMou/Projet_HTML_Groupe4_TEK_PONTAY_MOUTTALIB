@@ -27,7 +27,16 @@ p{
     margin-left: 20px
 }
 
+li{
+    text-align: left;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    color: rgb(78, 80, 82);
+    margin-left: 20px
+}
+
 .licence_logo{
     width: 20px;
     height: 20px;
+    align-items: center;
 }
