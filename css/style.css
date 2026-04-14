@@ -3,10 +3,34 @@ body{
 }
 
 header {
-    background-color: rgb(30,60,110);
+    background-color: rgb(22,55,103);
     text-align: center;
     padding: 15px;
-    display: flex;   /*pour l'affichage en ligne*/
+    display: grid;   /*pour l'affichage en ligne*/
+    font-size: 35px;
+}
+
+header a {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: ;
+}
+
+header img {
+    width: 130px;
+    height: 50px;
+}
+
+#tab {
+    border: 30px ridge rgb(0, 0, 0);
+    border-spacing: 8px;
+}
+
+nav {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    background-position: center;
 }
 
 h1{
