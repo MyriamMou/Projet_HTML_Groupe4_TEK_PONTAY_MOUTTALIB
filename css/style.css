@@ -63,6 +63,7 @@ li{
     width: 250px;
     height: 310px;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .container_projets {
@@ -71,8 +72,6 @@ li{
     gap: 20px;
     justify-items: center;
 }
-
-
 
 .etiquette_stage {
     display: grid;
@@ -85,5 +84,5 @@ li{
 .img_stage {
     width: 200px;
     height: 200px;
-    object-fit: contain;
+    object-fit: cover;
 }
