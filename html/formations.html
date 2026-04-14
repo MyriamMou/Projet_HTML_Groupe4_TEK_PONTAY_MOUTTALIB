@@ -56,66 +56,75 @@
 
         <h2>Programme Grandes Ecoles</h2>    
 
+        <div class="programme_accordeon">
 
-        <p>Les deux premières années du programme correspondent à la préparation intégrée, marquée par un cursus identique pour tous.
-            La troisième année ne correspond pas encore à la spécialisation, mais les étudiants passent un semestre à l'étranger.
-            La spécialisation intervient à partir de la quatrième année parmi les options suivantes :</p>
+            <h2>Programme Grandes Ecoles</h2>
 
+            <p class="programme_intro">
+                Les deux premières années du programme correspondent à la préparation intégrée, marquée par un cursus identique
+                pour tous. La troisième année ne correspond pas encore à la spécialisation, mais les étudiants passent un 
+                semestre à l'étranger. La spécialisation intervient à partir de la quatrième année parmi les options suivantes :
+            </p>
 
-        <ul>
-            <li>
-                Filière Data Science<br>
-                <ul>
-                    <li>Majeure Data & Artificial Intelligence</li>
-                    <li>Majeure Data Engineering</li>
-                    <li>Majeure Bio Numérique</li>
-                    <li>Majeure Business Intelligence & Analytics</li>
+            <details class="bloc_accordeon">
+                <summary>Filière Data Science</summary>
+                <ul class="liste_majeures">
+                    <li>Data & Artificial Intelligence</li>
+                    <li>Data Engineering</li>
+                    <li>Bio Numérique</li>
+                    <li>Business Intelligence & Analytics</li>
                 </ul>
-            </li>
+            </details>
 
-            <li>
-                Filière Information Technology<br>
-                <ul>
-                    <li>Majeure Information Systems Strategy and Governance</li>
-                    <li>Majeure Software Engineering</li>
-                    <li>Majeure IT for FInance</li>
-                    <li>Majeure Technologies Immersives & IA</li>
+            <details class="bloc_accordeon">
+                <summary>Filière Information Technology</summary>
+                <ul class="liste_majeures">
+                    <li>Information Systems Strategy and Governance</li>
+                    <li>Software Engineering</li>
+                    <li>IT for Finance</li>
+                    <li>Technologies Immersives & IA</li>
                 </ul>
-            </li>
+            </details>
 
-            <li>
-                Filière Sécurité & Réseaux<br>
-                <ul>
-                    <li>Majeure Cybersécurité, SI & Gouvernance</li>
-                    <li>Majeure Cybersécurité, infrastructures et logiciels</li>
-                    <li>Majeure Cybersécurité & Cloud</li>
+            <details class="bloc_accordeon">
+                <summary>Filière Sécurité & Réseaux</summary>
+                <ul class="liste_majeures">
+                    <li>Cybersécurité, SI & Gouvernance</li>
+                    <li>Cybersécurité, infrastructures et logiciels</li>
+                    <li>Cybersécurité & Cloud</li>
                 </ul>
-            </li>
+            </details>
 
-            <li>
-                Filière Systèmes embarqués<br>
-                <ul>
-                    <li>Majeure Transports Intelligents</li>
-                    <li>Majeure Systèmes robotiques et drones</li>
+            <details class="bloc_accordeon">
+                <summary>Filière Systèmes embarqués</summary>
+                <ul class="liste_majeures">
+                    <li>Transports Intelligents</li>
+                    <li>Systèmes robotiques et drones</li>
                 </ul>
-            </li>
+            </details>
 
-            <li>
-                Bachelor Développeur web & IA<br>
-                <ul>
+            <details class="bloc_accordeon">
+                <summary>Bachelor Développeur web & IA</summary>
+                <ul class="liste_majeures">
                     <li>Cycle ingénieur Informatique & IA</li>
                     <li>Cycle ingénieur Cybersécurité & réseaux</li>
                     <li>Cycle ingénieur Cybersécurité & ethical</li>
                     <li>Cycle ingénieur informatique</li>
                 </ul>
-            </li>
-           
-            
-        </ul>
-        <p>Il existe deux parcours possibles pour chacun de ces bachelors :
-            le parcours campus, qui se déroule entièrement sur le campus de l'EFREI,
-            et le parcours alternance, qui combine des périodes de formation en entreprise et des périodes de cours sur le campus.
-        </p>
+            </details>
+
+            <p class="programme_intro">
+                Si l'élève souhaite poursuivre une alternance, il peut rejoindre les majeures suivantes :
+            </p>
+
+            <ul class="liste_alternance">
+                <li>Cycle ingénieur Informatique & IA</li>
+                <li>Cycle ingénieur Cybersécurité & réseaux</li>
+                <li>Cycle ingénieur Cybersécurité & ethical</li>
+                <li>Cycle ingénieur informatique</li>
+            </ul>
+
+        </div>
 
 
 
@@ -124,12 +133,49 @@
 
 
         <div class="container_projets">
-            <p class="etiquette_projet"> <img class="img_projet" src="../img/formations_img/analyse_données.png"> Analyse de données</p>
-            <p class="etiquette_projet"> <img class="img_projet" src="../img/formations_img/computer_vision.png"> Computer Vision </p>
-            <p class="etiquette_projet"> <img class="img_projet" src="../img/formations_img/img_licence.png"> Capture the flag </p>
-            <p class="etiquette_projet"> <img class="img_projet" src="../img/formations_img/dev_app.png"> Développement d'applications</p>
-            <p class="etiquette_projet"> <img class="img_projet" src="../img/formations_img/img_licence.png"> Création de jeux </p>
-            <p class="etiquette_projet"> <img class="img_projet" src="../img/formations_img/img_licence.png"> Base de données </p>
+
+            <div class="etiquette_projet">
+                <div class="card">
+                    <img class="img_projet" src="../img/formations_img/analyse_données.png">
+                </div>
+                <p>Analyse de données</p>
+            </div>
+
+            <div class="etiquette_projet">
+                <div class="card">
+                    <img class="img_projet" src="../img/formations_img/computer_vision.png">
+                </div>
+                <p>Computer Vision</p>
+            </div>
+
+            <div class="etiquette_projet">
+                <div class="card">
+                    <img class="img_projet" src="../img/formations_img/img_licence.png">
+                </div>
+                <p>Capture the flag</p>
+            </div>
+
+            <div class="etiquette_projet">
+                <div class="card">
+                    <img class="img_projet" src="../img/formations_img/dev_app.png">
+                </div>
+                <p>Développement d'applications</p>
+            </div>
+
+            <div class="etiquette_projet">
+                <div class="card">
+                    <img class="img_projet" src="../img/formations_img/jdv_creation.png">
+                </div>
+                <p>Création de jeux</p>
+            </div>
+
+            <div class="etiquette_projet">
+                <div class="card">
+                    <img class="img_projet" src="../img/formations_img/img_licence.png">
+                </div>
+                <p>Base de données</p>
+            </div>
+
         </div>
 
 
@@ -188,7 +234,9 @@
                     <h4>L'alternance</h4>
                     <p>
                         L'alternance est un dispositif qui permet aux étudiants de combiner la formation théorique 
-                        avec une expérience pratique dans une entreprise.
+                        avec une expérience pratique dans une entreprise. 
+                        Il est possible aux élèves de rejoindre l'alternance en troisième année quelque soit le parcours choisi,
+                        ainsi qu'en cinquième année pour les élèves du cycle ingénieur. 
                     </p>
                 </div>
             </div>

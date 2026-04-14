@@ -24,7 +24,7 @@ h2{
 }
 
 h4{
-    text-align: left;
+    text-align: center;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -33,7 +33,7 @@ h4{
 }
 
 p{
-    text-align: left;
+    text-align: center;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
     color: rgb(78, 80, 82);
@@ -50,7 +50,7 @@ a{
 }
 
 li{
-    text-align: left;
+    text-align: center;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
     color: rgb(78, 80, 82);
@@ -65,25 +65,126 @@ li{
     vertical-align: middle;
 }
 
-.etiquette_projet {
-    display: flex;
-    flex-direction: column;   
-    align-items: center;      
-    text-align: center;      
+.programme_accordeon {
+    max-width: 900px;
+    margin: auto;
+    font-family: Arial, sans-serif;
 }
 
-.img_projet {
-    width: 250px;
-    height: 310px;
+.programme_intro {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    color: rgb(78, 80, 82);
     margin-bottom: 20px;
-    object-fit: cover;
+    line-height: 1.6;
+}
+
+.bloc_accordeon {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 20px rgba(250,60,170, 0.2);
+    overflow: hidden;
+}
+
+.bloc_accordeon summary {
+    padding: 15px 20px;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    text-align: left;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(78, 80, 82);
+    margin-left: 20px;
+}
+
+.bloc_accordeon summary::-webkit-details-marker {
+    display: none;
+}
+
+.bloc_accordeon summary::after {
+    content: "›";
+    position: absolute;
+    right: 20px;
+    font-size: 22px;
+    transition: transform 0.3s;
+    
+}
+
+.bloc_accordeon[open] summary::after {
+    transform: rotate(90deg);
+}
+
+.liste_majeures {
+    padding: 0 20px 20px 40px;
+}
+
+.liste_majeures li {
+    text-align: left;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    color: rgb(78, 80, 82);
+    margin-left: 20px;
+    margin-bottom: 6px;
+}
+
+.liste_alternance {
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
+.liste_alternance li {
+    margin-bottom: 6px;
 }
 
 .container_projets {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 40px;
     justify-items: center;
+}
+
+.etiquette_projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 310px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250,60,170);
+    border-radius: 10px;
+    z-index: 1;
+    transition: transform 0.4s ease;
+}
+
+.img_projet {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .img_projet {
+    transform: translate(-10px, -10px) rotate(-3deg);
+}
+
+.card:hover::before {
+    transform: translate(10px, 10px) rotate(3deg);
 }
 
 .etiquette_stage {
