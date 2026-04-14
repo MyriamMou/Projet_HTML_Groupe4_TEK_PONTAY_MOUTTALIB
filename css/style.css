@@ -126,3 +126,14 @@ li{
     object-fit: cover;
 }
 
+.highlight {
+  font-size: 2em;  
+  font-weight: bold; 
+  color: fuchsia;  
+}
+
+.img_projet {
+  width: 120px;
+  height: 80px;
+  object-fit: contain; 
+}
