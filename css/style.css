@@ -2,19 +2,14 @@ body{
     background-color: white;
 }
 
-header {
-    background-color: rgb(30,60,110);
-    text-align: center;
-    padding: 15px;
-    display: flex;   /*pour l'affichage en ligne*/
-}
-
 h1{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 68px;
     font-weight: bold;
     color: rgb(30,60,110);
+    margin-top: 80px;
+    margin-bottom: 10px;
 }
 
 h2{
@@ -23,7 +18,16 @@ h2{
     font-size: 48px;
     font-weight: bold;
     color: rgb(30,60,110);
-    margin-top: 70px;
+    margin-top: 80px;
+}
+
+h4{
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(78, 80, 82);
+    margin-left: 20px;
 }
 
 p{
@@ -31,7 +35,7 @@ p{
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
     color: rgb(78, 80, 82);
-    margin-left: 20px
+    margin-left: 20px;
 }
 
 li{
@@ -45,5 +49,41 @@ li{
 .licence_logo{
     width: 20px;
     height: 20px;
+    vertical-align: middle;
+}
+
+.etiquette_projet {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    text-align: center;      
+}
+
+.img_projet {
+    width: 250px;
+    height: 310px;
+    margin-bottom: 20px;
+}
+
+.container_projets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+
+
+.etiquette_stage {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    gap: 20px;
     align-items: center;
+    margin-bottom: 25px;
+}
+
+.img_stage {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
 }
