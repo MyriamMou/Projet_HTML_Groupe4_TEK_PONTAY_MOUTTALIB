@@ -2,6 +2,44 @@ body{
     background-color: white;
 }
 
+header {
+    background-color: rgb(22,55,103);
+    text-align: center;
+    padding: 15px;
+    display: grid;   /*pour l'affichage en ligne*/
+    font-size: 35px;
+}
+
+header a {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial Narrow Bold', sans-serif;
+
+}
+
+.imgheader {
+    width: 130px;
+    height: 50px;
+}
+
+#tab td {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+nav {
+    display: grid;
+    padding: 1px;
+    text-align: center;
+}
+
+.header1 {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+
 h1{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -19,10 +57,11 @@ h2{
     font-weight: bold;
     color: rgb(30,60,110);
     margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 h4{
-    text-align: center;
+    text-align: left;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -114,7 +153,7 @@ li{
 
 .equipe_gauche {
     display: grid;
-    grid-template-columns: 80px 1fr; 
+    grid-template-columns: 1fr 80px; 
     gap: 20px;
     align-items: center;
     margin-bottom: 25px;
@@ -126,6 +165,31 @@ li{
     object-fit: cover;
 }
 
+.texte_equipe_gauche p{
+    text-align: right;
+}
+
+#graphe_repartition{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;      
+    text-align: center;
+}
+
+#logo_entreprise{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;      
+    text-align: center;
+}
+
+p.entreprise_des{
+    text-align: center;
+}
 .highlight {
   font-size: 2em;  
   font-weight: bold; 
