@@ -38,6 +38,15 @@ p{
     margin-left: 20px;
 }
 
+a{
+    text-align: left;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    color: rgb(78, 80, 82);
+    margin-left: 20px;
+    
+}
+
 li{
     text-align: left;
     font-family: 'Arial Narrow Bold', sans-serif;
@@ -45,6 +54,8 @@ li{
     color: rgb(78, 80, 82);
     margin-left: 20px
 }
+
+/* ---------------------------- PAGE FORMATIONS ---------------------- */
 
 .licence_logo{
     width: 20px;
@@ -86,3 +97,32 @@ li{
     height: 200px;
     object-fit: cover;
 }
+
+.equipe_droite {
+    display: grid;
+    grid-template-columns: 80px 1fr; 
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.img_equipe_droite {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.equipe_gauche {
+    display: grid;
+    grid-template-columns: 80px 1fr; 
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.img_equipe_gauche {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
