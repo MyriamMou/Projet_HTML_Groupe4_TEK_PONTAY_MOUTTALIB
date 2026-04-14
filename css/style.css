@@ -19,6 +19,7 @@ h2{
     font-weight: bold;
     color: rgb(30,60,110);
     margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 h4{
@@ -114,7 +115,7 @@ li{
 
 .equipe_gauche {
     display: grid;
-    grid-template-columns: 80px 1fr; 
+    grid-template-columns: 1fr 80px; 
     gap: 20px;
     align-items: center;
     margin-bottom: 25px;
@@ -126,3 +127,28 @@ li{
     object-fit: cover;
 }
 
+.texte_equipe_gauche p{
+    text-align: right;
+}
+
+#graphe_repartition{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;      
+    text-align: center;
+}
+
+#logo_entreprise{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;      
+    text-align: center;
+}
+
+p.entreprise_des{
+    text-align: center;
+}
