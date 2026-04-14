@@ -2,43 +2,6 @@ body{
     background-color: white;
 }
 
-header {
-    background-color: rgb(22,55,103);
-    text-align: center;
-    padding: 15px;
-    display: grid;   /*pour l'affichage en ligne*/
-    font-size: 35px;
-}
-
-header a {
-    text-align: left;
-    color: rgb(255, 255, 255);
-    font-family: 'Arial Narrow Bold', sans-serif;
-
-}
-
-.imgheader {
-    width: 130px;
-    height: 50px;
-}
-
-#tab td {
-    border: 1px solid rgb(0, 0, 0);
-}
-
-nav {
-    display: grid;
-    padding: 1px;
-    text-align: center;
-}
-
-.header1 {
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    gap: 20px;
-    align-items: center;
-}
-
 
 h1{
     text-align: center;
@@ -189,6 +152,46 @@ li{
 
 p.entreprise_des{
     text-align: center;
+}
+
+
+/* ---------------------------- HEADER ---------------------- */
+
+header {
+    background-color: rgb(22,55,103);
+    text-align: center;
+    padding: 15px;
+    display: grid;   /*pour l'affichage en ligne*/
+    font-size: 35px;
+}
+
+header a {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial Narrow Bold', sans-serif;
+
+}
+
+.imgheader {
+    width: 130px;
+    height: 50px;
+}
+
+#tab td {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+nav {
+    display: grid;
+    padding: 1px;
+    text-align: center;
+}
+
+.header1 {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 20px;
+    align-items: center;
 }
 .highlight {
   font-size: 2em;  
