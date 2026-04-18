@@ -4,10 +4,10 @@
         <title>"Nos Formations"</title>
         <link href="../css/style.css" rel="stylesheet">
         <meta charset="UTF-8">
-        <script src="ton-fichier.js" defer></script>
+        
     </head>
 
-
+    <script src="../js/formation_display.js"></script>
 
 
 
@@ -70,18 +70,27 @@
 
             <section class="bachelors">
 
-                <div class="bach_tabs">
-                    <button class="bach_tabs actif" data-tab="ai">Data & Artificial Intelligence</button>
-                    <button class="bach_tabs" data-tab="engineering">Data Engineering</button>
-                    <button class="bach_tabs" data-tab="bio">Bio & Numérique</button>
-                    <button class="bach_tabs" data-tab="bi">Business Intelligence & Analytics</button>
+                <div class="bach_tabs_container">
+                    <button class="bach_tab actif" data_tab="bdwi">Bachelor Développeur web & IA</button>
+                    <button class="bach_tab" data_tab="bcr">Bachelor Cybersecurité & réseaux</button>
+                    <button class="bach_tab" data_tab="bceh">Bachelor Cybersécurité & ethical hacking</button>
+                    <button class="bach_tab" data_tab="bi">Bachelor informatique</button>
                 </div>
 
 
-
-
-
-                <div class="bach_contenu actif" id="ai">
+                <div class="bach_contenu actif" id="bdwi">
+                    <div class="bach_intro">
+                        <div class="bach_intro_left">
+                            <img src="../img/formations_img/img_licence.png" alt="Illustration">
+                        </div>
+                        <div class="bach_intro_right">
+                            <h4>Bachelor Développeur web & IA</h4>
+                            <p>
+                                Texte descriptif ici. Tu peux expliquer brièvement le bachelor,
+                                donner du contexte ou mettre en avant ses points forts.
+                            </p>
+                        </div>
+                    </div>
                     <div class="bach_grille">
                         <div class="bach_bloc">
                             <h3>Présentation</h3>
@@ -103,19 +112,31 @@
 
 
 
-                <div class="bach_contenu" id="engineering">
+                <div class="bach_contenu" id="bcr">
+                    <div class="bach_intro">
+                        <div class="bach_intro_left">
+                            <img src="../img/formations_img/img_licence.png" alt="Illustration">
+                        </div>
+                        <div class="bach_intro_right">
+                            <h4>Bachelor Cybersecurité & réseaux</h4>
+                            <p>
+                                Texte descriptif ici. Tu peux expliquer brièvement le bachelor,
+                                donner du contexte ou mettre en avant ses points forts.
+                            </p>
+                        </div>
+                    </div>
                     <div class="bach_grille">
                         <div class="bach_bloc">
                             <h3>Présentation</h3>
-                            <p>...</p>
+                            <p>Contenu présentation...</p>
                         </div>
                         <div class="bach_bloc">
                             <h3>Prérequis</h3>
-                            <p>...</p>
+                            <p>Contenu prérequis...</p>
                         </div>
                         <div class="bach_bloc">
                             <h3>Admissions parallèles</h3>
-                            <p>...</p>
+                            <p>Contenu admissions...</p>
                         </div>
                     </div>
                 </div>
@@ -125,20 +146,31 @@
 
 
 
-
-                <div class="bach_contenu" id="bio">
+                <div class="bach_contenu" id="bceh">
+                    <div class="bach_intro">
+                        <div class="bach_intro_left">
+                            <img src="../img/formations_img/img_licence.png" alt="Illustration">
+                        </div>
+                        <div class="bach_intro_right">
+                            <h4>Bachelor Cybersécurité & ethical hacking</h4>
+                            <p>
+                                Texte descriptif ici. Tu peux expliquer brièvement le bachelor,
+                                donner du contexte ou mettre en avant ses points forts.
+                            </p>
+                        </div>
+                    </div>
                     <div class="bach_grille">
                         <div class="bach_bloc">
                             <h3>Présentation</h3>
-                            <p>...</p>
+                            <p>Contenu présentation...</p>
                         </div>
                         <div class="bach_bloc">
                             <h3>Prérequis</h3>
-                            <p>...</p>
+                            <p>Contenu prérequis...</p>
                         </div>
                         <div class="bach_bloc">
                             <h3>Admissions parallèles</h3>
-                            <p>...</p>
+                            <p>Contenu admissions...</p>
                         </div>
                     </div>
                 </div>
@@ -149,18 +181,30 @@
 
 
                 <div class="bach_contenu" id="bi">
+                    <div class="bach_intro">
+                        <div class="bach_intro_left">
+                            <img src="../img/formations_img/img_licence.png" alt="Illustration">
+                        </div>
+                        <div class="bach_intro_right">
+                            <h4>Bachelor informatique</h4>
+                            <p>
+                                Texte descriptif ici. Tu peux expliquer brièvement le bachelor,
+                                donner du contexte ou mettre en avant ses points forts.
+                            </p>
+                        </div>
+                    </div>
                     <div class="bach_grille">
                         <div class="bach_bloc">
                             <h3>Présentation</h3>
-                            <p>...</p>
+                            <p>Contenu présentation...</p>
                         </div>
                         <div class="bach_bloc">
                             <h3>Prérequis</h3>
-                            <p>...</p>
+                            <p>Contenu prérequis...</p>
                         </div>
                         <div class="bach_bloc">
                             <h3>Admissions parallèles</h3>
-                            <p>...</p>
+                            <p>Contenu admissions...</p>
                         </div>
                     </div>
                 </div>
@@ -170,8 +214,7 @@
 
 
 
-
-                <p>Il existe deux parcours possibles pour chacun de ces bachelors :
+                <p><br><br><br>Il existe deux parcours possibles pour chacun de ces bachelors :
                     le parcours campus, qui se déroule entièrement sur le campus de l'EFREI,
                     et le parcours alternance, qui combine des périodes de formation en entreprise et des périodes de cours sur le campus.
                 </p>
@@ -179,6 +222,15 @@
             </section>
 
         
+
+
+
+
+
+
+
+
+
         
         <div class="programme_accordeon">
 
@@ -190,56 +242,193 @@
                 semestre à l'étranger. La spécialisation intervient à partir de la quatrième année parmi les options suivantes :
             </p>
 
-            <details class="bloc_accordeon">
-                <summary>Filière Data Science</summary>
-                <ul class="liste_majeures">
-                    <li>Data & Artificial Intelligence</li>
-                    <li>Data Engineering</li>
-                    <li>Bio Numérique</li>
-                    <li>Business Intelligence & Analytics</li>
-                </ul>
-            </details>
-
-            <details class="bloc_accordeon">
-                <summary>Filière Information Technology</summary>
-                <ul class="liste_majeures">
-                    <li>Information Systems Strategy and Governance</li>
-                    <li>Software Engineering</li>
-                    <li>IT for Finance</li>
-                    <li>Technologies Immersives & IA</li>
-                </ul>
-            </details>
-
-            <details class="bloc_accordeon">
-                <summary>Filière Sécurité & Réseaux</summary>
-                <ul class="liste_majeures">
-                    <li>Cybersécurité, SI & Gouvernance</li>
-                    <li>Cybersécurité, infrastructures et logiciels</li>
-                    <li>Cybersécurité & Cloud</li>
-                </ul>
-            </details>
-
-            <details class="bloc_accordeon">
-                <summary>Filière Systèmes embarqués</summary>
-                <ul class="liste_majeures">
-                    <li>Transports Intelligents</li>
-                    <li>Systèmes robotiques et drones</li>
-                </ul>
-            </details>
+            
+            
+                <div class="bach_tabs_container">
+                    <button class="bach_tab actif" data_tab="fds">Filière Data Science</button>
+                    <button class="bach_tab" data_tab="fit">Filière Information Technology</button>
+                    <button class="bach_tab" data_tab="fsr">Filière Sécurité & Réseaux</button>
+                    <button class="bach_tab" data_tab="fse">Filière Systèmes Embarqués</button>
+                    <button class="bach_tab" data_tab="alt">Alternance</button>
+                </div>
 
 
-            <p class="programme_intro">
-                <br> <br> Si l'élève souhaite poursuivre une alternance, il peut rejoindre les majeures suivantes :
-            </p>
+                <div class="bach_contenu actif" id="fds">
+                    <div class="bach_intro">
+                        <div class="bach_intro_left">
+                            <img src="../img/formations_img/img_licence.png" alt="Illustration">
+                        </div>
+                        <div class="bach_intro_right">
+                            <h4>Filière Data Science</h4>
+                            <p>
+                                Texte descriptif ici. Tu peux expliquer brièvement le bachelor,
+                                donner du contexte ou mettre en avant ses points forts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bach_grille">
+                        <div class="bach_bloc">
+                            <h3>Présentation</h3>
+                            <p>Contenu présentation...</p>
+                        </div>
+                        <div class="bach_bloc">
+                            <h3>Prérequis</h3>
+                            <p>Contenu prérequis...</p>
+                        </div>
+                        <div class="bach_bloc">
+                            <h3>Admissions parallèles</h3>
+                            <p>Contenu admissions...</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="liste_alt">
-                <div class="bloc_alt">Cycle ingénieur Informatique & IA</div>
-                <div class="bloc_alt">Cycle ingénieur Cybersécurité & réseaux</div>
-                <div class="bloc_alt">Cycle ingénieur Cybersécurité & ethical</div>
-                <div class="bloc_alt">Cycle ingénieur informatique</div>
-            </div>
+
+
+
+
+
+                <div class="bach_contenu" id="fit">
+                    <div class="bach_intro">
+                        <div class="bach_intro_left">
+                            <img src="../img/formations_img/img_licence.png" alt="Illustration">
+                        </div>
+                        <div class="bach_intro_right">
+                            <h4>Filière Information Technology</h4>
+                            <p>
+                                Texte descriptif ici. Tu peux expliquer brièvement le bachelor,
+                                donner du contexte ou mettre en avant ses points forts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bach_grille">
+                        <div class="bach_bloc">
+                            <h3>Présentation</h3>
+                            <p>Contenu présentation...</p>
+                        </div>
+                        <div class="bach_bloc">
+                            <h3>Prérequis</h3>
+                            <p>Contenu prérequis...</p>
+                        </div>
+                        <div class="bach_bloc">
+                            <h3>Admissions parallèles</h3>
+                            <p>Contenu admissions...</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="bach_contenu" id="fsr">
+                    <div class="bach_intro">
+                        <div class="bach_intro_left">
+                            <img src="../img/formations_img/img_licence.png" alt="Illustration">
+                        </div>
+                        <div class="bach_intro_right">
+                            <h4>Filière Sécurité & Réseaux</h4>
+                            <p>
+                                Texte descriptif ici. Tu peux expliquer brièvement le bachelor,
+                                donner du contexte ou mettre en avant ses points forts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bach_grille">
+                        <div class="bach_bloc">
+                            <h3>Présentation</h3>
+                            <p>Contenu présentation...</p>
+                        </div>
+                        <div class="bach_bloc">
+                            <h3>Prérequis</h3>
+                            <p>Contenu prérequis...</p>
+                        </div>
+                        <div class="bach_bloc">
+                            <h3>Admissions parallèles</h3>
+                            <p>Contenu admissions...</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="bach_contenu" id="fse">
+                    <div class="bach_intro">
+                        <div class="bach_intro_left">
+                            <img src="../img/formations_img/img_licence.png" alt="Illustration">
+                        </div>
+                        <div class="bach_intro_right">
+                            <h4>Filière Systèmes Embarqués</h4>
+                            <p>
+                                Texte descriptif ici. Tu peux expliquer brièvement le bachelor,
+                                donner du contexte ou mettre en avant ses points forts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bach_grille">
+                        <div class="bach_bloc">
+                            <h3>Présentation</h3>
+                            <p>Contenu présentation...</p>
+                        </div>
+                        <div class="bach_bloc">
+                            <h3>Prérequis</h3>
+                            <p>Contenu prérequis...</p>
+                        </div>
+                        <div class="bach_bloc">
+                            <h3>Admissions parallèles</h3>
+                            <p>Contenu admissions...</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="bach_contenu" id="alt">
+                    <div class="bach_intro">
+                        <div class="bach_intro_left">
+                            <img src="../img/formations_img/img_licence.png" alt="Illustration">
+                        </div>
+                        <div class="bach_intro_right">
+                            <h4>Alternance</h4>
+                            <p>
+                                Texte descriptif ici. Tu peux expliquer brièvement le bachelor,
+                                donner du contexte ou mettre en avant ses points forts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bach_grille">
+                        <div class="bach_bloc">
+                            <h3>Présentation</h3>
+                            <p>Contenu présentation...</p>
+                        </div>
+                        <div class="bach_bloc">
+                            <h3>Prérequis</h3>
+                            <p>Contenu prérequis...</p>
+                        </div>
+                        <div class="bach_bloc">
+                            <h3>Admissions parallèles</h3>
+                            <p>Contenu admissions...</p>
+                        </div>
+                    </div>
+                </div>
 
         </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -256,12 +445,18 @@
                 <p>Analyse de données</p>
             </div>
 
+
+
+
             <div class="etiquette_projet">
                 <div class="card">
                     <img class="img_projet" src="../img/formations_img/computer_vision.png">
                 </div>
                 <p>Computer Vision</p>
             </div>
+
+
+
 
             <div class="etiquette_projet">
                 <div class="card">
@@ -270,6 +465,8 @@
                 <p>Capture the flag</p>
             </div>
 
+
+
             <div class="etiquette_projet">
                 <div class="card">
                     <img class="img_projet" src="../img/formations_img/dev_app.png">
@@ -277,12 +474,17 @@
                 <p>Développement d'applications</p>
             </div>
 
+
+
             <div class="etiquette_projet">
                 <div class="card">
                     <img class="img_projet" src="../img/formations_img/jdv_creation.png">
                 </div>
                 <p>Création de jeux</p>
             </div>
+
+
+
 
             <div class="etiquette_projet">
                 <div class="card">
@@ -294,8 +496,15 @@
         </div>
 
 
+
+
+
+
+
+
        
         <h2>Opportunités de Stage</h2>    
+
            
             <div class="etiquette_stage">
                 <img class="img_stage" src="../img/formations_img/img_licence.png">
@@ -307,6 +516,7 @@
                 </p>
                 </div>
             </div>
+
 
 
             <div class="etiquette_stage">
@@ -322,6 +532,8 @@
             </div>
 
 
+
+
             <div class="etiquette_stage">
                 <img class="img_stage" src="../img/formations_img/img_licence.png">
                 <div class = texte_stage>
@@ -333,6 +545,10 @@
                     </p>
                 </div>
             </div>
+
+
+
+
             <div class="etiquette_stage">
                 <img class="img_stage" src="../img/formations_img/img_licence.png">
                 <div class = texte_stage>
@@ -343,6 +559,9 @@
                     </p>
                 </div>
             </div>
+
+
+
             <div class="etiquette_stage">
                 <img class="img_stage" src="../img/formations_img/img_licence.png">
                 <div class = texte_stage>
@@ -356,9 +575,18 @@
                 </div>
             </div>
 
+
+
             <p>
                 Nous contacter : <a href="https://help.efrei.fr/hc/fr/requests/new">Formulaire de contact</a>
             </p>
+
+
+
+
+
+
+
 
         <h2>Notre Equipe Pédagogique</h2>    
 
@@ -372,6 +600,9 @@
                 </div>
         </div>
 
+
+
+
         <div class="equipe_gauche">
                 <div class = texte_equipe_gauche>
                 <p>
@@ -381,6 +612,9 @@
                 </div>
                 <img class="img_equipe_gauche" src="../img/formations_img/img_licence.png">
         </div>
+
+
+
 
         <div class="equipe_droite">
                 <img class="img_equipe_droite" src="../img/formations_img/img_licence.png">
@@ -392,6 +626,9 @@
                 </div>
         </div>
 
+
+
+
         <div class="equipe_gauche">
                 <div class = texte_equipe_gauche>
                 <p>
@@ -402,17 +639,30 @@
                 <img class="img_equipe_gauche" src="../img/formations_img/img_licence.png">
         </div>
 
+
+
+
+
+
+
+
         <h2>Et Après ?</h2> 
+
+
         
         <p class="entreprise_des">Ces entreprises recrutent ! </p>
 
+
+
         <img id="logo_entreprise" src="../img/formations_img/img_licence.png">
 
-        <p class="entreprise_des">
+
+
+        <h4 class="entreprise_des">
             +2000 entreprises partenaires
             <br>
             98% d'insertion professionnelle dans les 2 mois suivant la fin des études.
-        </p>
+        </h4>
 
         <img id="graphe_repartition" src="../img/formations_img/img_licence.png">
                 

@@ -1,26 +1,33 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    var tabs = document.querySelectorAll('.majors__tab');
+    var containers = document.querySelectorAll('.bach_tabs_container');
 
-    for (var i = 0; i < tabs.length; i++) {
-        tabs[i].addEventListener('click', function() {
+    containers.forEach(function(container) {
 
-            var allTabs = document.querySelectorAll('.majors__tab');
-            for (var j = 0; j < allTabs.length; j++) {
-                allTabs[j].classList.remove('active');
-            }
+        var tabs = container.querySelectorAll('.bach_tab');
 
-            this.classList.add('active');
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
 
-            var contents = document.querySelectorAll('.majors__content');
-            for (var k = 0; k < contents.length; k++) {
-                contents[k].classList.remove('active');
-            }
+                tabs.forEach(function(t) {
+                    t.classList.remove('actif');
+                });
 
-            var target = this.getAttribute('data-tab');
-            document.getElementById(target).classList.add('active');
+                tab.classList.add('actif');
 
+                var parent = container.parentElement;
+                var contents = parent.querySelectorAll('.bach_contenu');
+
+                contents.forEach(function(c) {
+                    c.classList.remove('actif');
+                });
+
+                var target = tab.getAttribute('data_tab');
+                parent.querySelector('#' + target).classList.add('actif');
+
+            });
         });
-    }
+
+    });
 
 });
