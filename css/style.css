@@ -232,35 +232,49 @@ li{
 
 .equipe_droite {
     display: grid;
-    grid-template-columns: 80px 1fr; 
+    grid-template-columns: 180px 1fr; 
     gap: 20px;
     align-items: center;
     margin-bottom: 25px;
 }
 
 .img_equipe_droite {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: 50%;
+    margin-left : 40px;
+}
+
+.texte_equipe_droite p{
+    text-align: left;
+}
+
+.texte_equipe_droite h4{
+    text-align: left;
 }
 
 .equipe_gauche {
     display: grid;
-    grid-template-columns: 1fr 80px; 
+    grid-template-columns: 1fr 180px; 
     gap: 20px;
     align-items: center;
     margin-bottom: 25px;
 }
 
 .img_equipe_gauche {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: 50%;
+    margin-right : 40px;
 }
 
 .texte_equipe_gauche p{
+    text-align: right;
+}
+
+.texte_equipe_gauche h4{
     text-align: right;
 }
 
@@ -284,6 +298,35 @@ li{
 
 p.entreprise_des{
     text-align: center;
+}
+
+
+
+/* ---------------------------- PAGE A PROPOS ---------------------- */
+
+
+
+.equipe_pres_equipe {
+    display: grid;
+    grid-template-columns: 80px 1fr; 
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.img_pres_equipe {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.texte_pres_equipe p{
+    text-align: left;
+}
+
+.texte_pres_equipe h4{
+    text-align: left;
 }
 
 
@@ -325,6 +368,10 @@ nav {
     gap: 20px;
     align-items: center;
 }
+
+/* ---------------------------- ACCUEIL ---------------------- */
+
+
 .highlight {
   font-size: 2em;  
   font-weight: bold; 
