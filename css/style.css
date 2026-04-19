@@ -46,12 +46,13 @@ p{
     color: rgb(78, 80, 82);
 }
 
-a{
+a {
     text-align: left;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
     color: rgb(78, 80, 82);
-    
+    font-weight: bold;
+    text-decoration: none;
 }
 
 ul {
@@ -100,9 +101,9 @@ li{
 }
 
 .bach_intro_left img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 650px;
+    height: 250px;
+    object-fit: cover; 
     display: block;
 }
 
@@ -167,6 +168,9 @@ li{
     text-align: center;
 }
 
+.bach_bloc p {
+    line-height: 30px;
+}
 
 .container_projets {
     display: grid;
