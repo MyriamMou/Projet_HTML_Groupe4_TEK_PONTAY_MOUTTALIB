@@ -18,26 +18,32 @@ h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 48px;
     font-weight: bold;
-    color: rgb(22,55,103);
+    color: rgb(30,60,110);
     margin-top: 80px;
     margin-bottom: 40px;
 }
 
+h3 {
+    color: rgb(30,60,110);
+    margin-bottom: 10px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
 h4{
-    text-align: left;
+    text-align: center;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: rgb(78, 80, 82);
-    margin-left: 20px;
 }
 
 p{
-    text-align: left;
+    text-align: center;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
     color: rgb(78, 80, 82);
-    margin-left: 20px;
 }
 
 a{
@@ -45,19 +51,33 @@ a{
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
     color: rgb(78, 80, 82);
-    margin-left: 20px;
     
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 li{
-    text-align: left;
+    text-align: center;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
     color: rgb(78, 80, 82);
-    margin-left: 20px
 }
 
 /* ---------------------------- PAGE FORMATIONS ---------------------- */
+
+#img_formations {
+    display: block;
+    margin: 0 auto;
+}
+
+#graphe_repartition, #logo_entreprise {
+    display: block;
+    margin: 0 auto;
+}
 
 .licence_logo{
     width: 20px;
@@ -65,25 +85,135 @@ li{
     vertical-align: middle;
 }
 
-.etiquette_projet {
+.bach_tabs_container {
     display: flex;
-    flex-direction: column;   
-    align-items: center;      
-    text-align: center;      
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
-.img_projet {
-    width: 250px;
-    height: 310px;
-    margin-bottom: 20px;
-    object-fit: cover;
+.bach_intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
 }
+
+.bach_intro_left img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+.bach_intro_right {
+    flex: 1;
+}
+
+.bach_tab {
+    background: none;
+    border: none;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    color: rgb(78, 80, 82);
+    font-weight: 600;
+    padding: 10px 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+.bach_tab:hover {
+    color: rgb(30,60,110);
+}
+
+.bach_tab.actif {
+    color: rgb(30,60,110);
+}
+
+.bach_tab.actif::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 100%;
+    height: 3px;
+    background: rgb(30,60,110);
+    border-radius: 2px;
+}
+
+.bach_contenu {
+    display: none;
+    margin-top: 20px;
+}
+
+.bach_contenu.actif {
+    display: block;
+}
+
+.bach_grille {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+
+
+.bach_bloc {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
 
 .container_projets {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 40px;
     justify-items: center;
+}
+
+.etiquette_projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 310px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 198, 234);
+    border-radius: 20px;
+    z-index: 1;
+    transition: transform 0.4s ease;
+}
+
+.img_projet {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .img_projet {
+    transform: translate(-10px, -10px) rotate(-3deg);
+}
+
+.card:hover::before {
+    transform: translate(10px, 10px) rotate(3deg);
 }
 
 .etiquette_stage {
@@ -102,33 +232,49 @@ li{
 
 .equipe_droite {
     display: grid;
-    grid-template-columns: 80px 1fr; 
+    grid-template-columns: 180px 1fr; 
     gap: 20px;
     align-items: center;
     margin-bottom: 25px;
 }
 
 .img_equipe_droite {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
+    border-radius: 50%;
+    margin-left : 40px;
+}
+
+.texte_equipe_droite p{
+    text-align: left;
+}
+
+.texte_equipe_droite h4{
+    text-align: left;
 }
 
 .equipe_gauche {
     display: grid;
-    grid-template-columns: 1fr 80px; 
+    grid-template-columns: 1fr 180px; 
     gap: 20px;
     align-items: center;
     margin-bottom: 25px;
 }
 
 .img_equipe_gauche {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
+    border-radius: 50%;
+    margin-right : 40px;
 }
 
 .texte_equipe_gauche p{
+    text-align: right;
+}
+
+.texte_equipe_gauche h4{
     text-align: right;
 }
 
@@ -152,6 +298,35 @@ li{
 
 p.entreprise_des{
     text-align: center;
+}
+
+
+
+/* ---------------------------- PAGE A PROPOS ---------------------- */
+
+
+
+.equipe_pres_equipe {
+    display: grid;
+    grid-template-columns: 80px 1fr; 
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.img_pres_equipe {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.texte_pres_equipe p{
+    text-align: left;
+}
+
+.texte_pres_equipe h4{
+    text-align: left;
 }
 
 
@@ -194,13 +369,17 @@ nav {
     gap: 20px;
     align-items: center;
 }
+
+/* ---------------------------- ACCUEIL ---------------------- */
+
+
 .highlight {
   font-size: 2em;  
   font-weight: bold; 
-  color: fuchsia;  
+  color: rgb(255, 198, 234);  
 }
 
-.img_projet {
+.partenaire {
   width: 120px;
   height: 80px;
   object-fit: contain; 
