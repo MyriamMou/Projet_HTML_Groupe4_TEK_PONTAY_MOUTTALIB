@@ -294,22 +294,48 @@ li{
     text-align: right;
 }
 
-#graphe_repartition{
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    display: flex;
-    align-items: center;      
-    text-align: center;
+
+
+.logo-carousel {
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    background: white;
+    padding: 20px 0;
+    position: relative;
 }
 
-#logo_entreprise{
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+.logo-track {
     display: flex;
-    align-items: center;      
-    text-align: center;
+    align-items: center; 
+    width: max-content;
+    animation: scroll 15s linear infinite;
+}
+
+.logo-track img {
+    height: 80px;      
+    width: auto;         
+    margin: 0 25px;
+    object-fit: contain;
+    display: block;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-track img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 p.entreprise_des{
