@@ -372,6 +372,30 @@ p.entreprise_des{
 }
 
 
+/* ---------------------------- PAGE ADMISSION ---------------------- */
+
+.parcoursup div p,ol li{
+    text-align: left;
+}
+
+.ctn {
+    display: grid;
+    grid-template-columns: 1fr auto;  /* Le texte prend l'espace restant, l'image sa largeur naturelle */
+    gap: 10px;
+    align-items: start;
+    padding-right: 20px;
+}
+
+.txt_left {
+    grid-column: 1;
+}
+
+#cal_parcoursup {
+    grid-column: 2;
+    width: 200px;  
+    height: auto;
+    max-width: 100%;
+}
 /* ---------------------------- HEADER ---------------------- */
 
 header {
@@ -381,7 +405,18 @@ header {
     display: block;   /*pour l'affichage en ligne*/
     font-size: 35px;
     position: fixed;    /*Pour fixer l'élément même au scroll*/
+    z-index: 444;    /*premier plan*/
+    width: 100%;
+    top: 0;
+    left: 0;
 }
+
+header a:hover {
+    color: rgb(255, 198, 234);
+    background-color: rgb(255, 255, 255);
+}
+
+
 
 header a {
     text-align: left;
@@ -397,6 +432,12 @@ header a {
 
 #tab td {
     border: 1px solid rgb(0, 0, 0);
+    padding: 0;
+}
+
+#tab td a {
+    display: block; 
+    padding: 15px 20px;  
 }
 
 nav {
@@ -433,20 +474,33 @@ footer {
     text-align: center;
     background-position: center;
     background-color: rgb(22,55,103);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#lienfooter:hover {
+    text-decoration: underline;
 }
 
 footer p, #lienfooter {
     color: rgb(255, 255, 255);
-    font-size: 10px;
+    font-size: 14px;
     text-align: center;
 }
 
+#lienfooter {
+    font-size: 20px;
+}
 footer div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-footer #divfooter1, #divfooter2 {
-    width: 50%;
+#divfooter1 {
+    text-align: center;
+}
+
+#coordonnees {
+    text-decoration: underline;
 }
