@@ -380,7 +380,7 @@ p.entreprise_des{
 
 .ctn {
     display: grid;
-    grid-template-columns: 1fr auto;  /* Le texte prend l'espace restant, l'image sa largeur naturelle */
+    grid-template-columns: 1fr auto;
     gap: 10px;
     align-items: start;
     padding-right: 20px;
@@ -392,10 +392,41 @@ p.entreprise_des{
 
 #cal_parcoursup {
     grid-column: 2;
-    width: 200px;  
+    width: 240px;  
     height: auto;
     max-width: 100%;
 }
+
+ol>li {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+    color:rgb(40, 0, 201);
+}
+
+ol ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#etapes-p {
+    margin-top: 50px;
+}
+
+#etapes-p h4 {
+    text-decoration: underline;
+}
+
+#etapes-p img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
 /* ---------------------------- HEADER ---------------------- */
 
 header {
