@@ -2,11 +2,20 @@
 <html lang="fr">
     <head>
         <title>"Nos Formations"</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""
+        />
         <link href="../css/style.css" rel="stylesheet">
         <meta charset="UTF-8">
+        
     </head>
+
+    <body>
     <header>
-     
+
         <div class="header1">
         <img src = "../img/logo_efrei.png" alt = "Logo Efrei" class="imgheader">
 
@@ -25,9 +34,10 @@
             </table>
 
         </nav>
+        </div>
+        </div>
         
     </header>
-    <body>
        
         <section>
         <h1 >Bienvenue !</h1>
@@ -45,25 +55,89 @@
 
 
         <h2>Ils nous ont fait confiance</h2>    
-        <div class="container_projets">
-            <p class="etiquette_projet"> <img class="partenaire" src="../img/partenaires_img/Capgemini.png"> Capgemini</p>
-            <p class="etiquette_projet"> <img class="partenaire" src="../img/partenaires_img/Crédit Agricole.png"> Crédit Agricole</p>
-            <p class="etiquette_projet"> <img class="partenaire" src="../img/partenaires_img/Microsoft.png"> Microsoft</p>
-            <p class="etiquette_projet"> <img class="partenaire" src="../img/partenaires_img/Thales.png"> Thales</p>
-            <p class="etiquette_projet"> <img class="partenaire" src="../img/partenaires_img/SG.png"> SG</p>
-            <p class="etiquette_projet"> <img class="partenaire" src="../img/partenaires_img/enedis.png"> Enedis</p>
+        <div class="logo-carousel">
+            <div class="logo-track">
+                <img src="../img/formations_img/logo_entreprise/microsoft.png" alt="Microsoft">
+                <img src="../img/formations_img/logo_entreprise/capgemini.png" alt="Capgemini">
+                <img src="../img/formations_img/logo_entreprise/credit_agricole.png" alt="Credit Agricole">
+                <img src="../img/formations_img/logo_entreprise/thales.png" alt="Thales">
+                <img src="../img/formations_img/logo_entreprise/sg.png" alt="Société Générale">
+                <img src="../img/formations_img/logo_entreprise/enedis.png" alt="Enedis">
+
+                <img src="../img/formations_img/logo_entreprise/microsoft.png" alt="Microsoft">
+                <img src="../img/formations_img/logo_entreprise/capgemini.png" alt="Capgemini">
+                <img src="../img/formations_img/logo_entreprise/credit_agricole.png" alt="Credit Agricole">
+                <img src="../img/formations_img/logo_entreprise/thales.png" alt="Thales">
+                <img src="../img/formations_img/logo_entreprise/sg.png" alt="Société Générale">
+                <img src="../img/formations_img/logo_entreprise/enedis.png" alt="Enedis">
+            </div>
         </div>
         </section>
 
         <h2>Découvrez-nous !</h2>
+        <div class="container_projets">
+
+            <div class="etiquette_projet">
+                <div class="card">
+                    <a href="https://www.youtube.com/watch?v=sMIGlkY9TyE">
+                        <img class="img_projet" src="../img/decouverte_img/Campus.jpg">
+                    </a>
+                </div>
+                <p>Notre Campus</p>
+            </div>
+
+
+
+
+            <div class="etiquette_projet">
+                <div class="card">
+                    <a href="https://www.youtube.com/watch?v=WaBZktX02wA">
+                        <img class="img_projet" src="../img/decouverte_img/Projet.jpg">
+                    </a>
+                </div>
+                <p>Nos Projets</p>
+            </div>
+
+
+
+
+            <div class="etiquette_projet">
+                <div class="card">
+                    <a href="https://www.youtube.com/watch?v=hmZJwACT_6w">
+                        <img class="img_projet" src="../img/decouverte_img/Etudiant.jpg.jpg">
+                    </a>
+                </div>
+                <p>Nos Etudiants</p>
+            </div>
+
+
+
+            <div class="etiquette_projet">
+                <div class="card">
+                    <a href="https://www.youtube.com/watch?v=vF6k1ht1D8s">
+                        <img class="img_projet" src="../img/decouverte_img/Formation.jpg">
+                    </a>
+                </div>
+                <p>Nos Formations</p>
+            </div>
+        </div>
+        
         <h2>Nous contacter</h2>
-        <p>Insert API</p>
+        <div id="map"></div>
+
+<!-- Leaflet JS -->
+        <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""
+        ></script>
+        <script src="script.js"></script>
     </body>
     
     <footer>
         <div id="divfooter1">
             <p>©️2026 MOUTTALIB TEK PONTAY</p> 
-            <a href="../apropos.html" id="lienfooter">A propos de nous</a>
+            <a href="./apropos.html" id="lienfooter">A propos de nous</a>
             <br>
             <p id="coordonnees">Nos coordonnées :</p>
             <p>Numéro de téléphone : 01 88 28 90 00</p>
