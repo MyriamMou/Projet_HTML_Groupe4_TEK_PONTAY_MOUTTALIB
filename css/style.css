@@ -425,8 +425,84 @@ ol ul {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
+#end-p {
+    font-size: 25px;
+}
+
+#lien-p:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+/* ---------------------------- PAGE CAMPUS ---------------------- */
+
+h2 {
+    color: rgb(242, 167, 216);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#flex p {
+    padding: 10px;
+    border: 2px solid rgb(22, 55, 103);
+    font-size: 25px;
+    font-weight: normal;
+}
+
+#flex p:hover {
+    background-color: rgb(242, 167, 216);
+}
+
+.precision {
+    text-align: left;
+}
+
+#list-disc, #list-disc2 {
+    list-style-type: disc;
+    padding-left: 10px;
+    margin: 50px;
+}
+
+
+
+.l-d2 {
+    text-align: left;
+    font-size: 22px;
+}
+
+.bdx-droite {
+    text-align: right;
+}
+
+#list-disc3 {
+    list-style-type: disc;
+    padding-right: 10px;
+    margin: 50px;
+    padding-left: 900px;
+}
+
+.l-d3 {
+    text-align: left;
+    font-size: 22px;
+}
+
+
+iframe {
+    display: block;
+    margin: 50px auto;
+}
+
+#lien-jpo:hover {
+    text-decoration: underline;
+    color:blueviolet;
+}
 /* ---------------------------- HEADER ---------------------- */
 
 header {
