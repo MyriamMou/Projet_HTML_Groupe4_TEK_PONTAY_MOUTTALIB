@@ -1,0 +1,251 @@
+{
+    "intents": [
+    {
+      "intent": "presentation_efrei",
+      "patterns": [
+        "C'est quoi EFREI ?",
+        "Présentation de l'école",
+        "Parle-moi d'EFREI",
+        "Que fait EFREI ?",
+        "C'est quelle école ?"
+      ],
+      "responses": [
+        "EFREI Paris est une grande école d’ingénieurs spécialisée dans le numérique et l’informatique.",
+        "EFREI forme des ingénieurs dans les technologies du digital, de l’IA et des systèmes informatiques."
+      ]
+    },
+
+    {
+      "intent": "localisation",
+      "patterns": [
+        "Où est EFREI ?",
+        "Campus EFREI",
+        "Villejuif EFREI",
+        "Adresse école"
+      ],
+      "responses": [
+        "EFREI Paris est située à Villejuif, en région parisienne.",
+        "Le campus principal se trouve à Villejuif près de Paris."
+      ]
+    },
+
+    {
+      "intent": "formations_generales",
+      "patterns": [
+        "Quelles formations à EFREI ?",
+        "Filières EFREI",
+        "Que peut-on étudier ?",
+        "Cours proposés"
+      ],
+      "responses": [
+        "EFREI propose des formations en informatique, cybersécurité, intelligence artificielle et data science.",
+        "Les étudiants peuvent suivre des parcours en ingénierie logicielle, réseaux et systèmes."
+      ]
+    },
+
+    {
+      "intent": "informatique_base",
+      "patterns": [
+        "On apprend quoi en informatique ?",
+        "Cours informatique EFREI",
+        "Programmation EFREI",
+        "Est-ce qu'il y a du code ?"
+      ],
+      "responses": [
+        "Oui, les étudiants apprennent la programmation, les algorithmes, les bases de données et le développement logiciel.",
+        "L’informatique est au cœur de la formation avec beaucoup de projets pratiques."
+      ]
+    },
+
+    {
+      "intent": "langages_programmation",
+      "patterns": [
+        "Quels langages à EFREI ?",
+        "Python Java EFREI ?",
+        "Langages appris"
+      ],
+      "responses": [
+        "Les étudiants apprennent des langages comme Python, Java, C, JavaScript et SQL.",
+        "EFREI forme sur plusieurs langages utilisés en entreprise."
+      ]
+    },
+
+    {
+      "intent": "cybersecurite",
+      "patterns": [
+        "Cyber sécurité EFREI",
+        "Sécurité informatique",
+        "Hacking EFREI ?"
+      ],
+      "responses": [
+        "EFREI propose des spécialisations en cybersécurité et protection des systèmes.",
+        "Les étudiants apprennent à sécuriser les réseaux et systèmes informatiques."
+      ]
+    },
+
+    {
+      "intent": "ia_data",
+      "patterns": [
+        "Intelligence artificielle EFREI",
+        "Data science EFREI",
+        "IA école"
+      ],
+      "responses": [
+        "EFREI propose des formations en intelligence artificielle et data science.",
+        "Les étudiants travaillent sur le machine learning et l’analyse de données."
+      ]
+    },
+
+    {
+      "intent": "diplome",
+      "patterns": [
+        "Quel diplôme EFREI ?",
+        "Titre ingénieur EFREI",
+        "C'est reconnu ?"
+      ],
+      "responses": [
+        "EFREI délivre un diplôme d’ingénieur reconnu par la CTI.",
+        "Le diplôme est reconnu en France et à l’international."
+      ]
+    },
+
+    {
+      "intent": "niveau_etudes",
+      "patterns": [
+        "Après le bac EFREI ?",
+        "Quel niveau pour entrer ?",
+        "Admission bac EFREI"
+      ],
+      "responses": [
+        "EFREI est accessible après le bac via Parcoursup.",
+        "On peut aussi intégrer après un Bac+2 ou Bac+3."
+      ]
+    },
+
+    {
+      "intent": "admission",
+      "patterns": [
+        "Comment entrer à EFREI ?",
+        "Admission école",
+        "Comment candidater ?"
+      ],
+      "responses": [
+        "L’admission se fait via Parcoursup ou dossier selon le niveau.",
+        "Il y a plusieurs voies d’admission selon le parcours."
+      ]
+    },
+
+    {
+      "intent": "vie_etudiante",
+      "patterns": [
+        "Vie étudiante EFREI",
+        "Associations EFREI",
+        "Ambiance école"
+      ],
+      "responses": [
+        "La vie étudiante est très dynamique avec des associations et projets.",
+        "Les étudiants participent à de nombreuses activités et clubs."
+      ]
+    },
+
+    {
+      "intent": "stage_emploi",
+      "patterns": [
+        "Stages EFREI",
+        "Emploi après EFREI",
+        "Insertion professionnelle"
+      ],
+      "responses": [
+        "Les étudiants font plusieurs stages en entreprise pendant leur cursus.",
+        "EFREI a un très bon taux d’insertion dans le numérique."
+      ]
+    },
+
+    {
+      "intent": "projets",
+      "patterns": [
+        "Projets EFREI",
+        "Travaux étudiants",
+        "Projet informatique école"
+      ],
+      "responses": [
+        "Les étudiants réalisent de nombreux projets en informatique et IA.",
+        "Les projets sont souvent réalisés en équipe avec des cas réels."
+      ]
+    },
+
+    {
+      "intent": "international",
+      "patterns": [
+        "Échanges internationaux EFREI",
+        "Partenaires étrangers",
+        "Étudier à l’étranger"
+      ],
+      "responses": [
+        "EFREI a plus de 100 partenaires internationaux.",
+        "Les étudiants peuvent partir étudier à l’étranger."
+      ]
+    },
+
+    {
+      "intent": "logiciels_outils",
+      "patterns": [
+        "Outils utilisés EFREI",
+        "Logiciels école",
+        "IDE programmation"
+      ],
+      "responses": [
+        "Les étudiants utilisent des outils comme VS Code, Git, Python, Java et Docker.",
+        "Ils travaillent avec des outils professionnels du secteur informatique."
+      ]
+    },
+
+    {
+      "intent": "mathematiques",
+      "patterns": [
+        "Maths EFREI",
+        "Est-ce qu'il y a des maths ?",
+        "Niveau maths école"
+      ],
+      "responses": [
+        "Oui, les mathématiques sont importantes pour l’algorithmique et l’IA.",
+        "On étudie les maths appliquées à l’informatique."
+      ]
+    },
+
+    {
+      "intent": "campus",
+      "patterns": [
+        "Campus EFREI",
+        "Salle de classe EFREI",
+        "Infrastructures école"
+      ],
+      "responses": [
+        "Le campus est moderne avec des salles informatiques et espaces de travail.",
+        "EFREI dispose d’un campus équipé pour les projets numériques."
+      ]
+    },
+
+    {
+      "intent": "difficulte",
+      "patterns": [
+        "EFREI difficile ?",
+        "Niveau école",
+        "C'est dur EFREI ?"
+      ],
+      "responses": [
+        "Le niveau est exigeant mais adapté pour former des ingénieurs.",
+        "La formation demande du travail mais reste progressive."
+      ]
+    },
+
+    {
+      "intent": "default",
+      "patterns": [],
+      "responses": [
+        "Je ne suis pas sûr de comprendre, peux-tu reformuler ?",
+        "Je réponds uniquement aux questions sur EFREI et ses formations."
+      ]
+    }
+  ]
+}

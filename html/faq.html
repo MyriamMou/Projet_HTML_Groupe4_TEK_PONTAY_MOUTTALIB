@@ -32,7 +32,18 @@
     </header>
 
     <body>
+        <section id="chatbot">
+        <h2>Chatbot Efrei</h2>
+        <div id="chat-container">
+        <div id="chat-box"></div>
 
+        <div id="chat-input-area">
+            <label for ="user-input">Posez votre question sur EFREI et ses formations :</label>
+            <input type="text" id="user-input">
+            <button id="bouton-envoi" onclick="fetchJSON('/faq/intents.json')">Envoyer</button>
+        </div>
+    </div>
+</section>
     </body>
 
     <footer>
@@ -45,4 +56,5 @@
             <p>Adresse : 30-32 Avenue de la République</p>
         </div>
     </footer>
+<script src="../js/chatbot.js"></script>
 </html>
