@@ -188,6 +188,21 @@ li{
     align-items: center;
 }
 
+
+.container_projets1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.etiquette_projet1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%; 
+    margin-bottom: 20px;
+}
+
 .card {
     position: relative;
     width: 250px;
@@ -612,11 +627,6 @@ footer div {
     text-decoration: underline;
 }
 
-#map {
-    width: 100%;
-    height: 400px;
-}
-
 #chatbot-section {
     margin: 40px 0;
     padding: 20px;
@@ -691,4 +701,11 @@ footer div {
 #chat-box {
     display: flex;
     flex-direction: column;
+}
+
+#map {
+    height: 400px;
+    width: 40%;
+    margin: 20px auto;
+    border-radius: 10px;
 }
