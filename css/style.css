@@ -202,6 +202,12 @@ section h1, section h2 {
 }
 
 .etiquette_projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
     position: relative;
     width: 280px;
     height: 340px;
@@ -764,11 +770,6 @@ footer div {
     text-decoration: underline;
 }
 
-#map {
-    width: 100%;
-    height: 400px;
-}
-
 #chatbot-section {
     margin: 40px 0;
     padding: 20px;
@@ -799,23 +800,27 @@ footer div {
 
 #chat-input-area {
     display: flex;
+    gap: 10px;
+    align-items: center; 
 }
 
 #user-input {
     flex: 1;
     padding: 10px;
-    border: none;
-    border-right: 1px solid #ddd;
-    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 #bouton-envoi {
-    padding: 10px 15px;
+    padding: 10px 20px;
+    min-width: 100px;    
     border: none;
     background-color: rgb(22,55,103);
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 8px;
+    text-align: center;
+    white-space: nowrap;   
 }
 
 #bouton-envoi:hover {
@@ -830,7 +835,8 @@ footer div {
 }
 
 .user {
-    background-color: #c8e6c9;
+    background-color: rgb(22,55,103);
+    color: white;
     align-self: flex-end;
     text-align: right;
 }
@@ -843,4 +849,11 @@ footer div {
 #chat-box {
     display: flex;
     flex-direction: column;
+}
+
+#map {
+    height: 400px;
+    width: 40%;
+    margin: 20px auto;
+    border-radius: 10px;
 }
