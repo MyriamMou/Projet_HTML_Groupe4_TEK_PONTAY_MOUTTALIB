@@ -826,6 +826,17 @@ nav a:hover {
     transition: transform 0.5s ease;
 }
 
+.chiffres {
+    text-align: center;
+    list-style: none; 
+    padding: 0;
+}
+
+.card::before,
+.card::after {
+    pointer-events: none;
+}
+
 /* ---------------------------- FOOTER ---------------------- */
 
 footer {
