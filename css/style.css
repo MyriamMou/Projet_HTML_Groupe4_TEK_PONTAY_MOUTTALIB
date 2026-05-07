@@ -137,7 +137,7 @@ section h1, section h2 {
     display: block;
 }
 
-/* info parcours bachelor*/
+/* info parcours bachelor*//* info parcours bachelor*/
 
 .bach_intro {
     display: flex;
@@ -163,6 +163,12 @@ section h1, section h2 {
 .bach_intro_right h4 {
     font-size: 22px;
     margin-bottom: 10px;
+}
+
+.bach_intro_right p {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 /* infos parcours ingé */
@@ -328,6 +334,7 @@ section h1, section h2 {
     padding: 18px;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    text-align: left;
 }
 
 /* équipe pédagogique */
