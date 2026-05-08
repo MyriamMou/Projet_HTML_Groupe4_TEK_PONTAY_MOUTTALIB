@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     c.classList.remove('actif');
                 });
 
-                var target = tab.getAttribute('data_tab');
+                var target = tab.getAttribute('data-tab');
                 parent.querySelector('#' + target).classList.add('actif');
 
             });

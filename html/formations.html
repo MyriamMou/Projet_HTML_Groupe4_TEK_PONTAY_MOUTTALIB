@@ -4,9 +4,9 @@
     <title>Nos Formations</title>
     <meta charset="UTF-8">
     <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/formation_display.js"></script>
 </head>
 
-<script src="../js/formation_display.js"></script>
 
 <body>
 
@@ -37,7 +37,7 @@
 
     <br><br>
 
-    <img id="img_formations" src="../img/formations_img/efrei_etudiants.jpg">
+    <img id="img_formations" src="../img/formations_img/efrei_etudiants.jpg" alt="Photo d'étudiants de l'EFREI">
 
     <br><br>
 
@@ -46,10 +46,10 @@
     <section class="bachelors">
 
     <div class="bach_tabs_container">
-        <button class="bach_tab actif" data_tab="bdwi">Bachelor Développeur web & IA</button>
-        <button class="bach_tab" data_tab="bcr">Bachelor Cybersecurité & réseaux</button>
-        <button class="bach_tab" data_tab="bceh">Bachelor Cybersécurité & ethical hacking</button>
-        <button class="bach_tab" data_tab="bi">Bachelor informatique</button>
+        <button class="bach_tab actif" data-tab="bdwi">Bachelor Développeur web & IA</button>
+        <button class="bach_tab" data-tab="bcr">Bachelor Cybersecurité & réseaux</button>
+        <button class="bach_tab" data-tab="bceh">Bachelor Cybersécurité & ethical hacking</button>
+        <button class="bach_tab" data-tab="bi">Bachelor informatique</button>
     </div>
 
 
@@ -58,7 +58,7 @@
 
         <div class="bach_intro">
             <div class="bach_intro_left">
-                <img src="../img/formations_img/bach/ia.png" alt="Illustration">
+                <img src="../img/formations_img/bach/ia.png" alt="Illustration formations ia">
             </div>
 
             <div class="bach_intro_right">
@@ -110,7 +110,7 @@
 
         <div class="bach_intro">
             <div class="bach_intro_left">
-                <img src="../img/formations_img/bach/reseau.png" alt="Illustration">
+                <img src="../img/formations_img/bach/reseau.png" alt="Illustration réseaux">
             </div>
 
             <div class="bach_intro_right">
@@ -161,7 +161,7 @@
 
         <div class="bach_intro">
             <div class="bach_intro_left">
-                <img src="../img/formations_img/bach/hacking.png" alt="Illustration">
+                <img src="../img/formations_img/bach/hacking.png" alt="Illustration ethical hacking">
             </div>
 
             <div class="bach_intro_right">
@@ -212,7 +212,7 @@
 
         <div class="bach_intro">
             <div class="bach_intro_left">
-                <img src="../img/formations_img/bach/informatique.png" alt="Illustration">
+                <img src="../img/formations_img/bach/informatique.png" alt="Illustration informatique">
             </div>
 
             <div class="bach_intro_right">
@@ -280,18 +280,18 @@
             
             
                 <div class="bach_tabs_container">
-                    <button class="bach_tab actif" data_tab="fds">Filière Data Science</button>
-                    <button class="bach_tab" data_tab="fit">Filière Information Technology</button>
-                    <button class="bach_tab" data_tab="fsr">Filière Sécurité & Réseaux</button>
-                    <button class="bach_tab" data_tab="fse">Filière Systèmes Embarqués</button>
-                    <button class="bach_tab" data_tab="alt">Alternance</button>
+                    <button class="bach_tab actif" data-tab="fds">Filière Data Science</button>
+                    <button class="bach_tab" data-tab="fit">Filière Information Technology</button>
+                    <button class="bach_tab" data-tab="fsr">Filière Sécurité & Réseaux</button>
+                    <button class="bach_tab" data-tab="fse">Filière Systèmes Embarqués</button>
+                    <button class="bach_tab" data-tab="alt">Alternance</button>
                 </div>
 
 
                 <div class="bach_contenu actif" id="fds">
                     <div class="bach_intro">
                         <div class="bach_intro_left">
-                            <img src="../img/formations_img/cycle/data.png" alt="Illustration">
+                            <img src="../img/formations_img/cycle/data.png" alt="Illustration Data Science">
                         </div>
                         <div class="bach_intro_right">
                             <h4>Filière Data Science</h4>
@@ -341,7 +341,7 @@
                 <div class="bach_contenu" id="fit">
                     <div class="bach_intro">
                         <div class="bach_intro_left">
-                            <img src="../img/formations_img/cycle/info_tech.png" alt="Illustration">
+                            <img src="../img/formations_img/cycle/info_tech.png" alt="Illustration Information Technology">
                         </div>
                         <div class="bach_intro_right">
                             <h4>Filière Information Technology</h4>
@@ -391,7 +391,7 @@
                 <div class="bach_contenu" id="fsr">
                     <div class="bach_intro">
                         <div class="bach_intro_left">
-                            <img src="../img/formations_img/cycle/securite.png" alt="Illustration">
+                            <img src="../img/formations_img/cycle/securite.png" alt="Illustration Sécurité & Réseaux">
                         </div>
                         <div class="bach_intro_right">
                             <h4>Filière Sécurité & Réseaux</h4>
@@ -436,7 +436,7 @@
                 <div class="bach_contenu" id="fse">
                     <div class="bach_intro">
                         <div class="bach_intro_left">
-                            <img src="../img/formations_img/cycle/sys_emb.png" alt="Illustration">
+                            <img src="../img/formations_img/cycle/sys_emb.png" alt="Illustration Systèmes Embarqués">
                         </div>
                         <div class="bach_intro_right">
                             <h4>Filière Systèmes Embarqués</h4>
@@ -480,7 +480,7 @@
                 <div class="bach_contenu" id="alt">
                     <div class="bach_intro">
                         <div class="bach_intro_left">
-                            <img src="../img/formations_img/cycle/alternance.png" alt="Illustration">
+                            <img src="../img/formations_img/cycle/alternance.png" alt="Illustration Alternance">
                         </div>
                         <div class="bach_intro_right">
                             <h4>Alternance</h4>
@@ -531,7 +531,7 @@
         <div class="etiquette_projet">
             <div class="card">
                 <a href="https://www.youtube.com/watch?v=VVaVyCbMJ4c&list=PLDIh2gS6Ac4G1EK2zyOqaVHqpjf0HUCA1&index=19">
-                    <img class="img_projet" src="../img/formations_img/projets/emi.png">
+                    <img class="img_projet" src="../img/formations_img/projets/emi.png" alt="EMI : Environnement spatial simulé pour la recherche sur le microbiome">
                 </a>
             </div>
             <p>
@@ -542,7 +542,7 @@
         <div class="etiquette_projet">
             <div class="card">
                 <a href="https://www.youtube.com/watch?v=75EiXAbtV3I&list=PLDIh2gS6Ac4G1EK2zyOqaVHqpjf0HUCA1&index=21">
-                    <img class="img_projet" src="../img/formations_img/projets/abeilles.png">
+                    <img class="img_projet" src="../img/formations_img/projets/abeilles.png" alt="HiveNet : système de ruches connectées pour surveiller la santé des colonies en temps réel">
                 </a>
             </div>
             <p>
@@ -553,7 +553,7 @@
         <div class="etiquette_projet">
             <div class="card">
                 <a href="https://www.youtube.com/watch?v=I8uxbp2wK-o&list=PLDIh2gS6Ac4G1EK2zyOqaVHqpjf0HUCA1&index=17">
-                    <img class="img_projet" src="../img/formations_img/projets/ehteia.png">
+                    <img class="img_projet" src="../img/formations_img/projets/ehteia.png" alt="SafePulse : dispositif d’alerte personnelle intelligent basé sur détection de situation à risque">
                 </a>
             </div>
             <p>
@@ -564,7 +564,7 @@
         <div class="etiquette_projet">
             <div class="card">
                 <a href="https://www.youtube.com/watch?v=D9JAeeWiR28&list=PLDIh2gS6Ac4G1EK2zyOqaVHqpjf0HUCA1&index=8">
-                    <img class="img_projet" src="../img/formations_img/projets/biodiv.png">
+                    <img class="img_projet" src="../img/formations_img/projets/biodiv.png" alt="EcoWatch : plateforme de suivi et protection de la biodiversité locale par capteurs intelligents">
                 </a>
             </div>
             <p>
@@ -575,7 +575,7 @@
         <div class="etiquette_projet">
             <div class="card">
                 <a href="https://www.youtube.com/watch?v=UndMHzVp6jo&list=PLDIh2gS6Ac4G1EK2zyOqaVHqpjf0HUCA1&index=18">
-                    <img class="img_projet" src="../img/formations_img/projets/sport.png">
+                    <img class="img_projet" src="../img/formations_img/projets/sport.png" alt="SmartCoach Assist : système d’aide à la performance pour sportifs de haut niveau">
                 </a>
             </div>
             <p>
@@ -586,7 +586,7 @@
         <div class="etiquette_projet">
             <div class="card">
                 <a href="https://www.youtube.com/watch?v=yYGRO8Kvx0w&list=PLDIh2gS6Ac4G1EK2zyOqaVHqpjf0HUCA1&index=6">
-                    <img class="img_projet" src="../img/formations_img/projets/voiture.png">
+                    <img class="img_projet" src="../img/formations_img/projets/voiture.png" alt="AutonoDrive : prototype de véhicule autonome basé sur intelligence embarquée">
                 </a>
             </div>
             <p>
@@ -601,7 +601,7 @@
     <h2>Opportunités de Stage</h2>
 
     <div class="etiquette_stage" data-stage="1">
-        <img class="img_stage" src="../img/formations_img/stage/ouvrier.png">
+        <img class="img_stage" src="../img/formations_img/stage/ouvrier.png" alt="Stage ouvrier">
         <div class="texte_stage">
             <h4>Stage ouvrier - 4 semaines</h4>
             <p>
@@ -614,7 +614,7 @@
     </div>
 
     <div class="etiquette_stage" data-stage="2">
-        <img class="img_stage" src="../img/formations_img/stage/commercial.png">
+        <img class="img_stage" src="../img/formations_img/stage/commercial.png" alt="Stage commercial">
         <div class="texte_stage">
             <h4>Stage commercial - 4 semaines</h4>
             <p>
@@ -627,7 +627,7 @@
     </div>
 
     <div class="etiquette_stage" data-stage="3">
-        <img class="img_stage" src="../img/formations_img/stage/ingenieur.png">
+        <img class="img_stage" src="../img/formations_img/stage/ingenieur.png" alt="Stage d'ingénieur">
         <div class="texte_stage">
             <h4>Stage d'ingénieur - 12 semaines</h4>
             <p>
@@ -639,7 +639,7 @@
     </div>
 
     <div class="etiquette_stage" data-stage="4">
-        <img class="img_stage" src="../img/formations_img/stage/final.png">
+        <img class="img_stage" src="../img/formations_img/stage/final.png" alt="Stage de fin de cursus">
         <div class="texte_stage">
             <h4>Stage de fin de cursus - 24 semaines</h4>
             <p>
@@ -659,7 +659,7 @@
     <h2>Notre Equipe Pédagogique</h2>
 
     <div class="equipe_droite">
-        <img class="img_equipe_droite" src="../img/formations_img/pedagogie/asma_gabis.png">
+        <img class="img_equipe_droite" src="../img/formations_img/pedagogie/asma_gabis.png" alt="Asma GABIS">
         <div class="texte_equipe_droite">
             <h4>Asma GABIS</h4>
             <p>
@@ -671,7 +671,7 @@
 
 
     <div class="equipe_droite">
-        <img class="img_equipe_droite" src="../img/formations_img/pedagogie/max_agueh.png">
+        <img class="img_equipe_droite" src="../img/formations_img/pedagogie/max_agueh.png" alt="Max AGUEH">
         <div class="texte_equipe_droite">
             <h4>Max AGUEH</h4>
             <p>
@@ -681,7 +681,7 @@
     </div>
 
     <div class="equipe_droite">
-        <img class="img_equipe_droite" src="../img/formations_img/pedagogie/marciel_barros.png">
+        <img class="img_equipe_droite" src="../img/formations_img/pedagogie/marciel_barros.png" alt="Marciel BARROS PEREIRA">
         <div class="texte_equipe_droite">
             <h4>Marciel BARROS PEREIRA</h4>
             <p>
@@ -693,7 +693,7 @@
 
 
     <div class="equipe_droite">
-        <img class="img_equipe_droite" src="../img/formations_img/pedagogie/malika_charrad.png">
+        <img class="img_equipe_droite" src="../img/formations_img/pedagogie/malika_charrad.png" alt="Malika CHARRAD">
         <div class="texte_equipe_droite">
             <h4>Malika CHARRAD</h4>
             <p>
@@ -711,25 +711,25 @@
     <div class="logo-carousel">
         <div class="logo-track">
 
-            <img src="../img/formations_img/logo_entreprise/ibm.png">
-            <img src="../img/formations_img/logo_entreprise/microsoft.png">
-            <img src="../img/formations_img/logo_entreprise/unicancer.png">
-            <img src="../img/formations_img/logo_entreprise/capgemini.png">
-            <img src="../img/formations_img/logo_entreprise/credit_agricole.png">
-            <img src="../img/formations_img/logo_entreprise/thales.png">
-            <img src="../img/formations_img/logo_entreprise/louis_vuitton.png">
-            <img src="../img/formations_img/logo_entreprise/sg.png">
-            <img src="../img/formations_img/logo_entreprise/enedis.png">
+            <img src="../img/formations_img/logo_entreprise/ibm.png" alt="IBM">
+            <img src="../img/formations_img/logo_entreprise/microsoft.png" alt="Microsoft">
+            <img src="../img/formations_img/logo_entreprise/unicancer.png" alt="Unicancer">
+            <img src="../img/formations_img/logo_entreprise/capgemini.png" alt="Capgemini">
+            <img src="../img/formations_img/logo_entreprise/credit_agricole.png" alt="Credit Agricole">
+            <img src="../img/formations_img/logo_entreprise/thales.png" alt="Thales">
+            <img src="../img/formations_img/logo_entreprise/louis_vuitton.png" alt="Louis Vuitton">
+            <img src="../img/formations_img/logo_entreprise/sg.png" alt="SG">
+            <img src="../img/formations_img/logo_entreprise/enedis.png" alt="Enedis">
 
-            <img src="../img/formations_img/logo_entreprise/ibm.png">
-            <img src="../img/formations_img/logo_entreprise/microsoft.png">
-            <img src="../img/formations_img/logo_entreprise/unicancer.png">
-            <img src="../img/formations_img/logo_entreprise/capgemini.png">
-            <img src="../img/formations_img/logo_entreprise/credit_agricole.png">
-            <img src="../img/formations_img/logo_entreprise/thales.png">
-            <img src="../img/formations_img/logo_entreprise/louis_vuitton.png">
-            <img src="../img/formations_img/logo_entreprise/sg.png">
-            <img src="../img/formations_img/logo_entreprise/enedis.png">
+            <img src="../img/formations_img/logo_entreprise/ibm.png" alt="IBM">
+            <img src="../img/formations_img/logo_entreprise/microsoft.png" alt="Microsoft">
+            <img src="../img/formations_img/logo_entreprise/unicancer.png" alt="Unicancer">
+            <img src="../img/formations_img/logo_entreprise/capgemini.png" alt="Capgemini">
+            <img src="../img/formations_img/logo_entreprise/credit_agricole.png" alt="Credit Agricole">
+            <img src="../img/formations_img/logo_entreprise/thales.png" alt="Thales">
+            <img src="../img/formations_img/logo_entreprise/louis_vuitton.png" alt="Louis Vuitton">
+            <img src="../img/formations_img/logo_entreprise/sg.png" alt="SG">
+            <img src="../img/formations_img/logo_entreprise/enedis.png" alt="Enedis">
 
         </div>
     </div>
@@ -743,9 +743,7 @@
     <br><br>
 
     </section>
-
-</body>
-
+    
 <footer>
     <div id="divfooter1">
         <p>©️2026 MOUTTALIB TEK PONTAY</p>
@@ -756,5 +754,8 @@
         <p>Adresse : 30-32 Avenue de la République</p>
     </div>
 </footer>
+
+</body>
+
 
 </html>
