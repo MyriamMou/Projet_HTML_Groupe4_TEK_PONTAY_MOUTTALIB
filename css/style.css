@@ -600,6 +600,21 @@ section h1, section h2 {
     color: rgb(22,55,103);;
 }
 
+.grand {
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.etapes {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#tres-grand {
+    font-size: 25px;
+    margin-top: 40px;
+    text-decoration: underline;
+}
 
 @media (max-width: 900px) {
     .campus-card {
